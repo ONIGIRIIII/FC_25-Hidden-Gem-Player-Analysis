@@ -38,8 +38,9 @@ fc25-hidden-gems/
 │   └── EDA(FC_25 dataset).ipynb         # Main analysis notebook
 │
 ├── visualizations/
-│   └── PowerBI_Dashboard.pbix            # Power BI dashboard file
-└── README.md                              
+│   └── PowerBI_Dashboard.pbix           # Power BI dashboard file
+│
+└── README.md                            # Readme file  
 ```
 ## 📊 Dataset Deep Dive
 
