@@ -43,10 +43,7 @@ fc25-hidden-gems/
 │
 ├── visualizations/
 │   └── PowerBI_Dashboard.pbix            # Power BI dashboard file
-│
-├── requirements.txt                      # Python dependencies
-├── README.md                             # This file
-└── LICENSE                               # MIT License
+└── README.md                              
 ```
 ## 📊 Dataset Deep Dive
 
@@ -312,9 +309,9 @@ Hidden Gem Index = (Value Score × 0.40) +
 - **Age Range**: 17-44 years (Avg: 25.79 years)
 - **Overall Rating Range**: 47-91 (Avg: 66.17)
 
-###  Top Hidden Gems by Value Score
+## Top Hidden Gems by Value Score
 
-#### Elite Tier (Value Score 15%+) - 127 Players
+### Elite Tier (Value Score 15%+) - 127 Players
 
 | Rank | Player | Position | Team | League | Nation | Age | OVR | Perf Index | Value Score | HG Index |
 |------|--------|----------|------|--------|--------|-----|-----|------------|-------------|----------|
@@ -337,7 +334,6 @@ Hidden Gem Index = (Value Score × 0.40) +
 - **Sweet Spot**: Asian wingers aged 18-22 in emerging leagues
 
 
-
 ###  Premium Tier (Value Score 10-15%) - 333 Players
 
 | Rank | Player | Position | Team | League | Nation | Age | OVR | Value Score | HG Index |
@@ -352,8 +348,6 @@ Hidden Gem Index = (Value Score × 0.40) +
 - **Average Value Score**: 11.4%
 - **Position Distribution**: Wingers (48%), Midfielders (32%), Strikers (12%), Defenders (8%)
 - **Key Markets**: India, Poland, Korea, lower English divisions
-- **Investment Grade**: AA to AAA
-
 
 
 ###  Solid Value Tier (Value Score 5-10%) - 1,400 Players
@@ -459,19 +453,17 @@ Hidden Gem Index = (Value Score × 0.40) +
 
 #### European Gems by Sub-Region
 
-| Region | Leagues | Hidden Gems | HG Rate | Avg Value | Key Nations | Strategy |
-|--------|---------|-------------|---------|-----------|-------------|----------|
-| **Western Europe** | Prem, Bundesliga, La Liga | 287 | 8.8% | 6.2% | England, Germany | Youth Academies |
-| **Eastern Europe** | Ekstraklasa, Liga 1, SuperLig | 342 | 15.4% | 9.1% | Poland, Romania | Primary Target |
-| **Nordic** | Superliga, Allsvenskan | 156 | 14.2% | 8.8% | Denmark, Sweden | Physical Players |
-| **Lower Divisions** | Championship, 3. Liga, Ligue 2 | 310 | 11.7% | 7.9% | Various | Development Picks |
+| Region | Leagues | Hidden Gems | HG Rate | Avg Value | Key Nations | 
+|--------|---------|-------------|---------|-----------|-------------|
+| **Western Europe** | Prem, Bundesliga, La Liga | 287 | 8.8% | 6.2% | England, Germany | 
+| **Eastern Europe** | Ekstraklasa, Liga 1, SuperLig | 342 | 15.4% | 9.1% | Poland, Romania | 
+| **Nordic** | Superliga, Allsvenskan | 156 | 14.2% | 8.8% | Denmark, Sweden | 
+| **Lower Divisions** | Championship, 3. Liga, Ligue 2 | 310 | 11.7% | 7.9% | Various | 
 
 
-## 🏆 Hidden Gems by League
+##  Hidden Gems by League
 
-### Top 15 Leagues - Detailed Breakdown;
-
-####  Rank 1: MLS (United States)
+###  Rank 1: MLS (United States)
 
 | Metric | Value |
 |--------|-------|
@@ -485,18 +477,18 @@ Hidden Gem Index = (Value Score × 0.40) +
 
 **Top 10 MLS Hidden Gems**:
 
-| Player | Team | Position | Age | OVR | Value Score | Type |
-|--------|------|----------|-----|-----|-------------|------|
-| Serge Ngoma | Red Bulls | RM | 19 | 58 | 21.21% | Speed Demon |
-| Malachi Jones | NYC FC | LW | 20 | 53 | 17.64% | Skillful Winger |
-| Favian Loyola | Orlando | CM | 19 | 54 | 7.22% | Playmaker |
-| Diego Luna | RSL | CAM | 20 | 59 | 8.76% | Creative Mid |
-| Omir Fernandez | New England| LW | 22 | 57 | 7.89% | Direct Winger |
+| Player | Team | Position | Age | OVR | Value Score |
+|--------|------|----------|-----|-----|-------------|
+| Serge Ngoma | Red Bulls | RM | 19 | 58 | 21.21% | 
+| Malachi Jones | NYC FC | LW | 20 | 53 | 17.64% | 
+| Favian Loyola | Orlando | CM | 19 | 54 | 7.22% | 
+| Diego Luna | RSL | CAM | 20 | 59 | 8.76% | 
+| Omir Fernandez | New England| LW | 22 | 57 | 7.89% | 
 
 **MLS Insight**: Best league for young, athletic wingers with high potential. Value concentrated in players under 22.
 
 
-####  Rank 2: K League 1 (Korea Republic)
+### Rank 2: K League 1 (Korea Republic)
 
 | Metric | Value |
 |--------|-------|
@@ -510,18 +502,18 @@ Hidden Gem Index = (Value Score × 0.40) +
 
 **Top 10 K League Hidden Gems**:
 
-| Player | Team | Position | Age | OVR | Value Score | Profile |
-|--------|------|----------|-----|-----|-------------|---------|
-| Eom Seung Min | Jeonbuk | RW | 21 | 52 | 20.58% | Explosive Winger |
-| Park Ji-soo | Suwon | RM | 20 | 54 | 11.48% | Athletic Wide Man |
-| Kim Hyun-seo | Incheon | CM | 20 | 51 | 8.43% | Box-to-Box |
-| Lee Dong-gyeong | Ulsan | CAM | 22 | 63 | 7.92% | Technical #10 |
-| Kang Hyun-je | Pohang | CM | 22 | 49 | 6.02% | Workhorse |
+| Player | Team | Position | Age | OVR | Value Score | 
+|--------|------|----------|-----|-----|-------------|
+| Eom Seung Min | Jeonbuk | RW | 21 | 52 | 20.58% | 
+| Park Ji-soo | Suwon | RM | 20 | 54 | 11.48% | 
+| Kim Hyun-seo | Incheon | CM | 20 | 51 | 8.43% | 
+| Lee Dong-gyeong | Ulsan | CAM | 22 | 63 | 7.92% | 
+| Kang Hyun-je | Pohang | CM | 22 | 49 | 6.02% | 
 
 **K League Insight**: Highest hidden gem density in world football. Technical quality meets Asian market undervaluation.
 
 
-####  Rank 3: Chinese Super League
+###  Rank 3: Chinese Super League
 
 | Metric | Value |
 |--------|-------|
@@ -545,7 +537,7 @@ Hidden Gem Index = (Value Score × 0.40) +
 
 **CSL Insight**: Ultimate value league. Wingers aged 18-21 systematically undervalued by 15-20%.
 
-### League Comparison Matrix
+## League Comparison Matrix
 
 | League | Country | HG Count | HG Rate | Avg Value | Best Position | 
 |--------|---------|----------|---------|-----------|---------------|
@@ -670,10 +662,11 @@ The position-specific performance indices were carefully designed based on:
 
 
 
-## 👤 Author
+## 👤 Contact
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- Name: Harshpreet Singh
+- GitHub: [ONIGIRIIII](https://github.com/ONIGIRIIII)
+- LinkedIn:[LinkedIn](https://www.linkedin.com/in/harshpreet-singh-2331762a4/)
+- **Portfolio:** [Portfolio](https://onigiriii.framer.website/)  
+- Email: singhharshpreet675@gmail.com
 
