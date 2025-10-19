@@ -1,10 +1,5 @@
 # ⚽ FC 25 Hidden Gems Analysis
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Pandas](https://img.shields.io/badge/Pandas-1.5+-green.svg)
-![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-yellow.svg)
-![License](https://img.shields.io/badge/License-MIT-red.svg)
-
 ## 📊 Project Overview
 
 An advanced data analytics project that identifies undervalued football players (hidden gems) in FIFA/FC 25 using custom performance indices, position-specific metrics, and comprehensive statistical analysis. The project combines Python-based EDA with interactive Power BI dashboards to provide actionable insights for football scouts, FIFA gamers, and sports analysts.
