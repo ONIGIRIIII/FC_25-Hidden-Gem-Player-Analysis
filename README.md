@@ -26,6 +26,9 @@ fc25-hidden-gems/
 ├── data/
 │   ├── raw/
 │   │   └── male_players.csv              # Original dataset (17,737 players)
+|   |
+|   ├── notebooks/
+│   └── EDA(FC_25 dataset).ipynb         # Main analysis notebook
 │   └── processed/
 │       ├── players_with_metrics.csv      # Full dataset with calculated metrics
 │       ├── hidden_gems_top50.csv         # Top 50 hidden gems
@@ -33,10 +36,7 @@ fc25-hidden-gems/
 │       ├── league_insights.csv           # League-level aggregations
 │       ├── nation_insights.csv           # Nation-level aggregations
 │       └── correlation_matrix.csv        # Attribute correlations
-│
-├── notebooks/
-│   └── EDA(FC_25 dataset).ipynb         # Main analysis notebook
-│
+|
 ├── visualizations/
 │   └── PowerBI_Dashboard.pbix           # Power BI dashboard file
 │
