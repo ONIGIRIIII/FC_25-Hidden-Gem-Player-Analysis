@@ -11,7 +11,7 @@ An advanced data analytics project that identifies undervalued football players 
 
 **🔗 [View Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiM2FkNzQ5NzAtMjEyZS00MjkzLWI1YTYtOThhNmU5ZGVhOGM0IiwidCI6Ijk4OTk3ZjE3LWI5Y2MtNDVhNy05ZTkxLThhOWFhMTlkMTg5NiJ9)**
 
----
+
 
 ## 🎯 Key Features
 
@@ -21,7 +21,7 @@ An advanced data analytics project that identifies undervalued football players 
 - **Interactive Power BI Dashboard**: Dynamic filtering by position, league, age, and performance metrics
 - **Comprehensive EDA**: 14,345 players analyzed across 58 attributes
 
----
+
 ## 📁 Project Structure
 
 ```
@@ -48,7 +48,6 @@ fc25-hidden-gems/
 ├── README.md                             # This file
 └── LICENSE                               # MIT License
 ```
----
 ## 📊 Dataset Deep Dive
 
 ### 📈 Overall Dataset Statistics
@@ -107,7 +106,6 @@ fc25-hidden-gems/
 
 **Strategic Insight**: Emerging leagues (MLS, K League 1, CSL, Liga MX) have 13.3% hidden gem rate vs 8.8% in elite leagues - a **50% efficiency gain**.
 
----
 
 ##  Methodology: Position-Specific Performance Modeling
 
@@ -147,7 +145,7 @@ SPI = (Finishing × 0.30) + (Positioning × 0.25) + (Shot Power × 0.15) +
 
 **Position Insight**: Young strikers (17-21) in lower leagues systematically undervalued by 8-10% due to lack of international exposure.
 
----
+
 
 #### 2️⃣ Winger Performance Index (WPI)
 
@@ -185,7 +183,7 @@ WPI = (Pace × 0.30) + (Dribbling × 0.25) + (Crossing × 0.20) +
 
 **Market Inefficiency**: 274 undervalued wingers identified, with average potential profit of +12.8% performance above rating.
 
----
+
 
 #### 3️⃣ Midfielder Performance Index (MPI)
 
@@ -224,7 +222,7 @@ MPI = (Passing × 0.30) + (Vision × 0.25) + (Ball Control × 0.20) +
 - OVR formula over-weighting physicality
 - Stamina/work rate improving with age (already high in young players)
 
----
+
 
 #### 4️⃣ Defender Performance Index (DPI)
 
@@ -261,7 +259,7 @@ DPI = (Defense × 0.30) + (Standing Tackle × 0.25) + (Heading × 0.15) +
 
 **Market Pattern**: Championship, 3. Liga, and Scandinavian leagues have 2.3x more undervalued defenders than top-5 leagues.
 
----
+
 
 ## 📊 Performance Metrics Explained
 
@@ -304,7 +302,6 @@ Hidden Gem Index = (Value Score × 0.40) +
 - Undervalued: 1,400 players (9.8%)
 - Hidden Gems: 460 players (3.2%)
 
----
 
 ## 📈 Key Findings
 
@@ -351,7 +348,7 @@ Hidden Gem Index = (Value Score × 0.40) +
 | Argentina | 76 | 8.55 |
 | France | 65 | 9.08 |
 
----
+
 
 
 ## 📊 Power BI Dashboard Features
@@ -405,7 +402,7 @@ IF(
 )
 ```
 
----
+
 
 ## 📊 Statistical Deep Dive
 
@@ -441,7 +438,7 @@ IF(
 | Striker | 2,876 | 66.45 | 318 | 11.1% |
 | Winger | 2,363 | 66.18 | 274 | 11.6% |
 
----
+
 
 
 ## 📝 Methodology Notes
@@ -461,7 +458,6 @@ The position-specific performance indices were carefully designed based on:
 - **Game vs Reality**: FC 25 ratings may not perfectly reflect real-world ability
 - **Missing Context**: Team tactics, chemistry, and playstyle preferences not included
 
----
 
 
 ## 👤 Author
@@ -471,129 +467,5 @@ The position-specific performance indices were carefully designed based on:
 - LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
 - Email: your.email@example.com
 
----
 
 
-
-
-## 🎲 Hidden Gem Index: The Complete Algorithm
-
-### 🧪 Multi-Factor Valuation Model
-
-The Hidden Gem Index (HGI) is a proprietary scoring system that combines four critical factors to identify players with maximum upside potential:
-
-```python
-Hidden_Gem_Index = (Value_Score × 0.40) + 
-                   ((30 - Age) × 0.30) + 
-                   (League_Bonus × 0.15) + 
-                   ((79 - OVR_capped) × 0.15)
-```
-
-### 📊 Component Breakdown
-
-#### Factor 1: Value Score (40% Weight)
-
-```python
-Value_Score = ((Position_Performance_Index - Overall_Rating) / Overall_Rating) × 100
-```
-
-**Interpretation Guide**:
-- **>15%**: Exceptional value - Elite hidden gem
-- **10-15%**: Outstanding value - Premium target
-- **5-10%**: Good value - Solid investment
-- **0-5%**: Fair value - Monitor
-- **<0%**: Overvalued - Avoid
-
-**Distribution Analysis**:
-
-| Value Score Range | Players | Percentage | Category |
-|------------------|---------|------------|----------|
-| >15% | 127 | 0.9% | Elite Gems |
-| 10-15% | 333 | 2.3% | Premium Targets |
-| 5-10% | 1,400 | 9.8% |  Solid Value |
-| 0-5% | 6,624 | 46.2% |  Fair Value |
-| -5-0% | 3,641 | 25.4% | Overvalued |
-| <-5% | 2,220 | 15.5% |  Avoid |
-
-#### Factor 2: Youth Potential (30% Weight)
-
-```python
-Youth_Score = (30 - Player_Age)
-```
-
-**Age Curve Analysis**:
-
-| Age Range | Category | HGI Multiplier | Development Window | Risk Level |
-|-----------|----------|----------------|-------------------|------------|
-| 17-19 | Wonder Kids | 11-13 | 6-8 years | High variance |
-| 20-22 | Young Talents | 8-10 | 4-6 years | Moderate |
-| 23-25 | Established Youth | 5-7 | 2-4 years | Low |
-| 26-28 | Prime Age | 2-4 | 0-2 years | Very Low |
-| 29+ | Veterans | 0-1 | Limited | Minimal |
-
-**Sweet Spot**: Ages 20-22 provide optimal balance of value, development potential, and lower risk.
-
-#### Factor 3: League Tier Bonus (15% Weight)
-
-```python
-League_Bonus = 10 if League not in Top_5_Leagues else 0
-```
-
-**League Tier Classification**:
-
-| Tier | Leagues | Bonus | Rationale |
-|------|---------|-------|-----------|
-| **Elite** | Premier League, La Liga, Serie A, Bundesliga, Ligue 1 | 0 | Premium exposure |
-| **Major** | Eredivisie, Liga Portugal, Süper Lig | +5 | Good visibility |
-| **Emerging** | MLS, K League, CSL, Liga MX, Championship | +10 | Hidden talent pools |
-| **Developing** | ISL, A-League, J-League, Ekstraklasa | +10 | Maximum inefficiency |
-
-**Market Arbitrage**: Players from non-top-5 leagues receive systematic 10-point bonus, reflecting real market undervaluation.
-
-#### Factor 4: Rating Ceiling (15% Weight)
-
-```python
-Ceiling_Score = (79 - min(Overall_Rating, 79))
-```
-
-**Logic**: Players rated below 79 have more room for growth. OVR is capped at 79 to avoid penalizing already good players.
-
-**Distribution**:
-
-| OVR Range | Ceiling Score | Players | Growth Potential |
-|-----------|---------------|---------|------------------|
-| 47-59 | 20-32 | 4,618 | Massive |
-| 60-69 | 10-19 | 6,619 | High |
-| 70-79 | 0-9 | 2,180 | Moderate |
-| 80+ | 0 | 1,078 | Limited |
-
----
-
-## 🏆 Hidden Gems: Elite Discovery Report
-
-###  Top 50 Hidden Gems - Complete Analysis
-
-#### Tier 1: Elite Gems (HGI 15.0+)
-
-| Rank | Player | Pos | Team | League | Age | OVR | Perf Index | Value % | HGI | Investment Grade |
-|------|--------|-----|------|--------|-----|-----|------------|---------|-----|-----------------|
-| 🥇 1 | **Li Deming** | RW | Shanghai Port FC | CSL | 20 | 50 | 60.65 | +21.30% | **17.37** | AAA |
-| 🥈 2 | **Thoi Singh** | LW | NorthEast United | ISL | 20 | 49 | 58.40 | +19.18% | **16.67** | AAA |
-| 🥉 3 | **Eom Seung Min** | RW | Jeonbuk Hyundai | K League 1 | 21 | 52 | 62.70 | +20.58% | **16.48** | AAA |
-| 4 | Serge Ngoma | RM | Red Bulls | MLS | 19 | 58 | 70.30 | +21.21% | 16.43 | AAA |
-| 5 | Kyrell Wilson | RM | Swansea City | Championship | 19 | 53 | 62.45 | +17.83% | 15.83 | AA+ |
-| 6 | Qeyser Ezimet | RW | Rongcheng FC | CSL | 18 | 48 | 55.25 | +15.10% | 15.79 | AA+ |
-| 7 | Almoatasim Siddiq | RM | Al Ittihad | Saudi Pro | 22 | 53 | 63.45 | +19.72% | 15.69 | AA+ |
-| 8 | Malachi Jones | LW | NYC FC | MLS | 20 | 53 | 62.35 | +17.64% | 15.46 | AA+ |
-| 9 | Nathan Amanatidis | LM | Sydney FC | A-League | 18 | 54 | 62.90 | +16.48% | 15.44 | AA |
-| 10 | Vincy Barretto | RM | Chennaiyin FC | ISL | 24 | 55 | 66.70 | +21.27% | 15.41 | AA |
-
-**Pattern Recognition**: 
-- 🌏 **80% are Asian league players** (CSL, ISL, K League, A-League)
-- 👶 **70% are under 21 years old**
-- ⚡ **90% are wingers/wide players**
-- 📊 **Average value gap: +18.7%**
-
-### 📈 Position-Specific Top 10s
-
-#### ⚽
