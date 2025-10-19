@@ -4,9 +4,11 @@
 
 An advanced data analytics project that identifies undervalued football players (hidden gems) in FIFA/FC 25 using custom performance indices, position-specific metrics, and comprehensive statistical analysis. The project combines Python-based EDA with interactive Power BI dashboards to provide actionable insights for football scouts, FIFA gamers, and sports analysts.
 
+**🔗 [Dataset](https://www.kaggle.com/datasets/nyagami/ea-sports-fc-25-database-ratings-and-stats?select=all_players.csv)**
+
 **🔗 [View Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiM2FkNzQ5NzAtMjEyZS00MjkzLWI1YTYtOThhNmU5ZGVhOGM0IiwidCI6Ijk4OTk3ZjE3LWI5Y2MtNDVhNy05ZTkxLThhOWFhMTlkMTg5NiJ9)**
 
-**🔗 [Dataset](https://www.kaggle.com/datasets/nyagami/ea-sports-fc-25-database-ratings-and-stats?select=all_players.csv)**
+**🔗 [Jupter Notebook (if not opening in Github)](https://nbviewer.org/github/ONIGIRIIII/FC_25-Hidden-Gem-Player-Analysis/blob/main/EDA%28FC_25%20dataset%29.ipynb)**
 
 
 
