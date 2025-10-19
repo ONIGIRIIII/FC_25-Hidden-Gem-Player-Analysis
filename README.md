@@ -6,7 +6,7 @@ An advanced data analytics project that identifies undervalued football players 
 
 **🔗 [Dataset](https://www.kaggle.com/datasets/nyagami/ea-sports-fc-25-database-ratings-and-stats?select=all_players.csv)**
 
-**🔗 [View Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiM2FkNzQ5NzAtMjEyZS00MjkzLWI1YTYtOThhNmU5ZGVhOGM0IiwidCI6Ijk4OTk3ZjE3LWI5Y2MtNDVhNy05ZTkxLThhOWFhMTlkMTg5NiJ9)**
+**🔗 [View Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYmMxNzNjOTQtZDgzNS00YThjLWE5MDYtNjU3MjY5YjU2Y2NmIiwidCI6Ijk4OTk3ZjE3LWI5Y2MtNDVhNy05ZTkxLThhOWFhMTlkMTg5NiJ9&pageName=0aa159206465743de60c)**
 
 **🔗 [Jupter Notebook (if not opening in Github)](https://nbviewer.org/github/ONIGIRIIII/FC_25-Hidden-Gem-Player-Analysis/blob/main/EDA%28FC_25%20dataset%29.ipynb)**
 
