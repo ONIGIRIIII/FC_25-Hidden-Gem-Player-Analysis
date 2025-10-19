@@ -269,6 +269,15 @@ Value Score = ((Position Performance Index - Overall Rating) / Overall Rating) �
 - **>10%**: Hidden Gem territory
 - **Negative Score**: Overvalued based on performance
 
+### Quadrant Classification
+```python
+Quadrant = Based on (Age ≤ 25 OR > 25) AND (Value Score ≥ 5% OR < 5%)
+```
+- **★ Prime Target:** Young (≤25) + High Value (≥5%) - BEST investment opportunity
+- **Short-term Value:** Older (>25) + High Value (≥5%) - Good for immediate impact
+- **Development Player:** Young (≤25) + Low Value (<5%) - Future potential project
+- **Overvalued:** Older (>25) + Low Value (<5%) - Avoid these players
+
 ### Hidden Gem Index
 ```python
 Hidden Gem Index = (Value Score × 0.40) + 
