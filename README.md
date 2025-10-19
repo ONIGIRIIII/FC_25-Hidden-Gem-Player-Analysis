@@ -28,22 +28,22 @@ fc25-hidden-gems/
 │
 ├── data/
 │   ├── raw/
-│   │   └── male_players.csv              # Original dataset (17,737 players)
+│   │   └── male_players.csv                   # Original dataset (17,737 players)
 |   |
 |   ├── notebooks/
-│   └── EDA(FC_25 dataset).ipynb         # Main analysis notebook
-│   └── processed/
-│       ├── players_with_metrics.csv      # Full dataset with calculated metrics
-│       ├── hidden_gems_top50.csv         # Top 50 hidden gems
-│       ├── position_analysis.csv         # Position-grouped statistics
-│       ├── league_insights.csv           # League-level aggregations
-│       ├── nation_insights.csv           # Nation-level aggregations
-│       └── correlation_matrix.csv        # Attribute correlations
+│   └── EDA(FC_25 dataset).ipynb               # Main analysis notebook
+│       └── processed/
+│             ├── players_with_metrics.csv      # Full dataset with calculated metrics
+│             ├── hidden_gems_top50.csv         # Top 50 hidden gems
+│             ├── position_analysis.csv         # Position-grouped statistics
+│             ├── league_insights.csv           # League-level aggregations
+│             ├── nation_insights.csv           # Nation-level aggregations
+│             └── correlation_matrix.csv        # Attribute correlations
 |
 ├── visualizations/
-│   └── PowerBI_Dashboard.pbix           # Power BI dashboard file
+│   └── PowerBI_Dashboard.pbix                  # Power BI dashboard file
 │
-└── README.md                            # Readme file  
+└── README.md                                   # Readme file  
 ```
 ## 📊 Dataset Deep Dive
 
@@ -75,7 +75,7 @@ fc25-hidden-gems/
 
 ### 🌍 Geographic Distribution Analysis
 
-#### Top 15 Nations by Player Count
+#### Top 10 Nations by Player Count
 
 | Rank | Nation | Players | % of Total | Avg OVR | Top League |
 |------|--------|---------|------------|---------|------------|
@@ -370,9 +370,9 @@ Hidden Gem Index = (Value Score × 0.40) +
 
 ## 🗺️ Hidden Gems by Geographic Location
 
-###  Asia-Pacific Region (203 Hidden Gems)
+###  Asia-Pacific Region 
 
-#### Asian Hidden Gems
+#### Top 10 Asian Hidden Gems
 
 | Player | Position | Team | League | Country | Age | OVR | Value Score | Type |
 |--------|----------|------|--------|---------|-----|-----|-------------|------|
@@ -405,9 +405,9 @@ Hidden Gem Index = (Value Score × 0.40) +
 
 
 
-### 🌎 Americas Region (159 Hidden Gems)
+### 🌎 Americas Region 
 
-#### Top 20 American Hidden Gems
+#### Top 10 American Hidden Gems
 
 | Player | Position | Team | League | Country | Age | OVR | Value Score | Profile |
 |--------|----------|------|--------|---------|-----|-----|-------------|---------|
@@ -437,9 +437,9 @@ Hidden Gem Index = (Value Score × 0.40) +
 | 🇦🇷🇧🇷 **South America** | 2,030 | 59 | 2.9% | 23.8 | ST/CM | Liga Profesional |
 
 
-### 🇪🇺 Europe Region (1,095 Hidden Gems)
+### 🇪🇺 Europe Region 
 
-#### Top 20 European Hidden Gems
+#### Top 10 European Hidden Gems
 
 | Player | Position | Team | League | Country | Age | OVR | Value Score | Archetype |
 |--------|----------|------|--------|---------|-----|-----|-------------|-----------|
@@ -484,7 +484,7 @@ Hidden Gem Index = (Value Score × 0.40) +
 | **Best Position** | RM/LW (42 HGs) |
 | **Age Sweet Spot** | 19-22 years |
 
-**Top 10 MLS Hidden Gems**:
+**Top 5 MLS Hidden Gems**:
 
 | Player | Team | Position | Age | OVR | Value Score |
 |--------|------|----------|-----|-----|-------------|
@@ -509,7 +509,7 @@ Hidden Gem Index = (Value Score × 0.40) +
 | **Best Position** | RW/RM (31 HGs) |
 | **Age Sweet Spot** | 20-23 years |
 
-**Top 10 K League Hidden Gems**:
+**Top 5 K League Hidden Gems**:
 
 | Player | Team | Position | Age | OVR | Value Score | 
 |--------|------|----------|-----|-----|-------------|
@@ -534,7 +534,7 @@ Hidden Gem Index = (Value Score × 0.40) +
 | **Best Position** | RW/LW (36 HGs - 62%) |
 | **Age Sweet Spot** | 18-21 years |
 
-**Top 10 CSL Hidden Gems**:
+**Top 5 CSL Hidden Gems**:
 
 | Player | Team | Position | Age | OVR | Value Score | Strength |
 |--------|------|----------|-----|-----|-------------|----------|
