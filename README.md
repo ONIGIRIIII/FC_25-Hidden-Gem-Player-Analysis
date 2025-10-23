@@ -655,9 +655,6 @@ IF(
 
 **Scenario**: You're a ratings producer at EA Sports preparing FC 27 overall ratings based on FC 25/26 performance data and real-world observations.
 
-**The Challenge**: 
-*"We've received complaints that several Asian league players are significantly underrated compared to their actual performance statistics. Our community is pointing out inconsistencies, particularly with Korean and Chinese league wingers who perform exceptionally well in international competitions but have low OVR ratings in-game."*
-
 **Using the Hidden Gem Dashboard**:
 
 1. **Filter by Region**: Navigate to the Geographic Analysis → Asia-Pacific section
@@ -674,13 +671,6 @@ The dashboard reveals **Li Deming** (Shanghai Port FC, RW, Age 20):
 **Analysis**:
 Li Deming's Performance Index of 60.65 suggests his actual ability aligns with a player rated **61-62 OVR**, not 50. His pace (85) and dribbling (78) are elite for his age, yet he's rated as a below-average player. Comparing him to similarly-aged Premier League wingers rated 60-65 OVR, Li Deming's attributes are comparable or superior in key areas.
 
-**Real-World Context**:
-In 2024-25 season, Li Deming recorded:
-- 8 goals, 12 assists in CSL
-- Named CSL Young Player of the Month (March 2025)
-- Called up to China National Team
-- Performance metrics suggest Europa League quality
-
 **Action Taken for FC 27**:
 ```
 Player: Li Deming
@@ -695,8 +685,37 @@ Rationale:
 **Broader Impact**:
 Using this analysis, the ratings team identified **58 CSL players** requiring +6 to +12 OVR adjustments, improving regional representation accuracy and player satisfaction. The Hidden Gem Index became a **quality control tool** for detecting systematic rating biases across leagues.
 
+### Use Case 2: Football Scout - Real-World Talent Identification
 
+**Scenario**: You're a scout for a Bundesliga 2 club looking for a promising central midfielder to sign on a free transfer (contract expiring).
 
+**Using the Dashboard**:
+Filter by:
+- Position: CDM/CM
+- Age: 18-22
+- League: Ekstraklasa, Danish Superliga (within travel budget)
+- Value Score: 10%+
+
+**Discovery: Adam Kardaš** (Lechia Gdańsk, CDM, 18 years)
+- Value Score: +12.45%
+- Key Stats: Vision 68, Passing 72, Stamina 76
+- Contract Status: Expiring in 6 months
+- Current Market Value: €800K
+
+**Scouting Report**:
+The Hidden Gem Index (15.22) indicates exceptional value. His midfielder performance index (59.60) suggests he's performing at a 59-60 OVR level despite being rated 53—a gap typically indicating real-world undervaluation in lower-tier leagues.
+
+### Use Case 3: Sports Analyst - Data Journalism
+
+**Scenario**: You're writing an article titled "Why Asian Football is More Competitive Than FIFA Ratings Suggest"
+
+**Using the Dashboard**:
+Compare hidden gem rates:
+- Asian leagues: 13.7% average HG rate
+- European Top 5: 5.5% average HG rate
+
+**Key Finding**: 
+"Our analysis of 17,737 FC 25 players reveals systematic undervaluation of Asian talent. Korean, Chinese, and Indian leagues produce hidden gems at **2.5x the rate** of elite European leagues, suggesting FIFA's rating algorithm may contain regional bias. The average K League 1 winger rated 55 OVR performs statistically equivalent to a 65 OVR Championship winger a 10-point discrepancy worth exploring."
 
 
 ## 📝 Methodology Notes
