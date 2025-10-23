@@ -103,212 +103,6 @@ fc25-hidden-gems/
 
 **Strategic Insight**: Emerging leagues (MLS, K League 1, CSL, Liga MX) have 13.3% hidden gem rate vs 8.8% in elite leagues - a **50% efficiency gain**.
 
-
-##  Methodology: Position-Specific Performance Modeling
-
-### 🎯 The Science Behind Performance Indices
-
-Traditional OVR ratings in FC 25 use a generic formula that fails to capture position-specific excellence. Our custom indices weight attributes based on real world positional demands and in game effectiveness.
-
-#### 1️⃣ Striker Performance Index (SPI)
-
-**Formula Design Philosophy**: Strikers must convert chances efficiently while maintaining composure in high pressure situations.
-
-```python
-SPI = (Finishing × 0.30) + (Positioning × 0.25) + (Shot Power × 0.15) + 
-      (Pace × 0.15) + (Composure × 0.10) + (Dribbling × 0.05)
-```
-
-**Weight Justification**:
-- **Finishing (30%)**: Primary job is scoring goals
-- **Positioning (25%)**: Being in the right place at the right time
-- **Shot Power (15%)**: Ability to beat goalkeepers from distance
-- **Pace (15%)**: Essential for getting behind defenses
-- **Composure (10%)**: Staying calm in 1v1 situations
-- **Dribbling (5%)**: Creating space in tight areas
-
-**Validation Statistics**:
-- Correlation with Goals Scored (Career Mode): 0.78
-- Top 10 SPI players average 0.87 goals/game vs 0.52 for top 10 OVR strikers
-- Identified 318 undervalued strikers (11.1% of all strikers)
-
-**Elite Discoveries**:
-
-| Player | Team | Age | OVR | SPI | Value Gap | Key Strength |
-|--------|------|-----|-----|-----|-----------|--------------|
-| Fardin Ali Molla | Mohun Bagan SG | 22 | 49 | 53.64 | +9.49% | 72 Finishing |
-| Felipe Rodríguez | Preston | 17 | 57 | 62.03 | +8.86% | 88 Positioning |
-| Gbemi Arubi | Waterford | 20 | 52 | 56.40 | +8.46% | 70 Shot Power |
-
-**Position Insight**: Young strikers (17-21) in lower leagues systematically undervalued by 8-10% due to lack of international exposure.
-
-
-
-#### 2️⃣ Winger Performance Index (WPI)
-
-**Formula Design Philosophy**: Modern wingers must combine explosive pace with technical ability to create and finish chances.
-
-```python
-WPI = (Pace × 0.30) + (Dribbling × 0.25) + (Crossing × 0.20) + 
-      (Agility × 0.15) + (Finishing × 0.10)
-```
-
-**Weight Justification**:
-- **Pace (30%)**: Essential for beating fullbacks
-- **Dribbling (25%)**: Creating 1v1 opportunities
-- **Crossing (20%)**: Service to strikers
-- **Agility (15%)**: Quick direction changes
-- **Finishing (10%)**: Converting chances when cutting inside
-
-**Breakthrough Finding**: Wingers show the **highest value score variance** (Std: 4.23%) of all positions, making them the best position group for finding hidden gems.
-
-**Top Winger Discoveries**:
-
-| Player | Position | Team | League | Age | OVR | WPI | Value Gap | Standout Stat |
-|--------|----------|------|--------|-----|-----|-----|-----------|---------------|
-| **Li Deming** | RW | Shanghai Port FC | CSL | 20 | 50 | 60.65 | **+21.30%** | 85 Pace, 78 Dribbling |
-| **Thoi Singh** | LW | NorthEast United | ISL | 20 | 49 | 58.40 | **+19.18%** | 82 Pace, 71 Agility |
-| **Eom Seung Min** | RW | Jeonbuk Hyundai | K League 1 | 21 | 52 | 62.70 | **+20.58%** | 80 Pace, 75 Dribbling |
-| **Serge Ngoma** | RM | Red Bulls | MLS | 19 | 58 | 70.30 | **+21.21%** | 88 Pace, 82 Agility |
-| **Vincy Barretto** | RM | Chennaiyin FC | ISL | 24 | 55 | 66.70 | **+21.27%** | 84 Pace, 79 Crossing |
-
-**Strategic Pattern**: Asian leagues (CSL, ISL, K League 1) contain systematic 15-21% value gaps for wingers due to:
-1. Lower international visibility
-2. Fewer European scouts
-3. EA rating bias toward European leagues
-4. Actual technical skills comparable to European counterparts
-
-**Market Inefficiency**: 274 undervalued wingers identified, with average potential profit of +12.8% performance above rating.
-
-
-
-#### 3️⃣ Midfielder Performance Index (MPI)
-
-**Formula Design Philosophy**: Midfielders are the engine room - vision, passing accuracy, and stamina define elite playmakers.
-
-```python
-MPI = (Passing × 0.30) + (Vision × 0.25) + (Ball Control × 0.20) + 
-      (Stamina × 0.15) + (Long Passing × 0.10)
-```
-
-**Weight Justification**:
-- **Passing (30%)**: Core responsibility of controlling tempo
-- **Vision (25%)**: Seeing and executing key passes
-- **Ball Control (20%)**: Maintaining possession under pressure
-- **Stamina (15%)**: Covering ground for 90 minutes
-- **Long Passing (10%)**: Switching play and launching attacks
-
-**Subtype Analysis**:
-
-| Midfielder Type | Count | Avg OVR | Avg MPI | Key Differentiator |
-|----------------|-------|---------|---------|-------------------|
-| **CDM (Defensive)** | 1,547 | 66.8 | 68.2 | Interceptions (72.3) |
-| **CM (Central)** | 2,134 | 66.5 | 69.1 | Stamina (78.5) |
-| **CAM (Attacking)** | 1,211 | 67.2 | 71.4 | Vision (74.8) |
-
-**Elite Discoveries**:
-
-| Player | Type | Team | League | Age | OVR | MPI | Value Gap | Specialty |
-|--------|------|------|--------|-----|-----|-----|-----------|-----------|
-| Adam Kardaš | CDM | Lechia Gdańsk | Ekstraklasa | 18 | 53 | 59.60 | +12.45% | 68 Vision |
-| Engson Singh | CAM | Mohun Bagan SG | ISL | 21 | 47 | 52.70 | +12.13% | 72 Passing |
-| Mada | CAM | SD Eibar | La Liga 2 | 22 | 57 | 62.10 | +8.95% | 76 Vision |
-
-**Age Factor Analysis**: U21 midfielders show **14.2% higher hidden gem rate** than 25+ midfielders due to:
-- Technical skills developing faster than physical attributes
-- OVR formula over-weighting physicality
-- Stamina/work rate improving with age (already high in young players)
-
-
-
-#### 4️⃣ Defender Performance Index (DPI)
-
-**Formula Design Philosophy**: Modern defenders need defensive awareness, physical presence, and recovery pace.
-
-```python
-DPI = (Defense × 0.30) + (Standing Tackle × 0.25) + (Heading × 0.15) + 
-      (Strength × 0.15) + (Interceptions × 0.10) + (Pace × 0.05)
-```
-
-**Weight Justification**:
-- **Defense (30%)**: Core defensive positioning and awareness
-- **Standing Tackle (25%)**: Primary defensive action
-- **Heading (15%)**: Aerial dominance
-- **Strength (15%)**: Physical duels
-- **Interceptions (10%)**: Reading the game
-- **Pace (5%)**: Recovery speed (less critical than other positions)
-
-**Position Subtype Comparison**:
-
-| Defender Type | Count | Avg OVR | Avg DPI | Pace Avg | Physical Avg |
-|---------------|-------|---------|---------|----------|--------------|
-| **CB (Center Back)** | 2,456 | 66.1 | 71.2 | 64.2 | 73.8 |
-| **LB/RB (Full Back)** | 1,234 | 65.8 | 68.4 | 74.3 | 68.1 |
-| **LWB/RWB (Wing Back)** | 524 | 66.4 | 69.7 | 76.8 | 66.4 |
-
-**Top Defender Gems**:
-
-| Player | Position | Team | League | Age | OVR | DPI | Value Gap | Type |
-|--------|----------|------|--------|-----|-----|-----|-----------|------|
-| Riccardo Di Trolio | CB | Coventry City | Championship | 19 | 52 | 56.95 | +9.52% | Ball-playing CB |
-| Christian Østergaard | CB | Randers FC | Superliga | 19 | 52 | 56.25 | +8.17% | Physical defender |
-| Leopold Wurm | CB | Jahn Regensburg | 3. Liga | 18 | 55 | 59.30 | +7.82% | Modern sweeper |
-
-**Market Pattern**: Championship, 3. Liga, and Scandinavian leagues have 2.3x more undervalued defenders than top-5 leagues.
-
-
-
-## 📊 Performance Metrics Explained
-
-### Value Score
-```python
-Value Score = ((Position Performance Index - Overall Rating) / Overall Rating) × 100
-```
-- **Positive Score**: Player performs better than their rating suggests
-- **>5%**: Undervalued player
-- **>10%**: Hidden Gem territory
-- **Negative Score**: Overvalued based on performance
-
-### Quadrant Classification
-```python
-Quadrant = Based on (Age ≤ 25 OR > 25) AND (Value Score ≥ 5% OR < 5%)
-```
-- **★ Prime Target:** Young (≤25) + High Value (≥5%) - BEST investment opportunity
-- **Short-term Value:** Older (>25) + High Value (≥5%) - Good for immediate impact
-- **Development Player:** Young (≤25) + Low Value (<5%) - Future potential project
-- **Overvalued:** Older (>25) + Low Value (<5%) - Avoid these players
-
-### Hidden Gem Index
-```python
-Hidden Gem Index = (Value Score × 0.40) + 
-                   ((30 - Age) × 0.30) + 
-                   (League Bonus × 0.15) + 
-                   ((79 - OVR) × 0.15)
-```
-**Weights:**
-- 40% - Performance vs Rating
-- 30% - Youth Factor (younger = better)
-- 15% - League Tier (non-top 5 leagues get bonus)
-- 15% - Room for Growth (lower OVR = more potential)
-
-### Player Classification
-
-| Category | Value Score Range | Description |
-|----------|------------------|-------------|
-| **Hidden Gem** | >10% | Elite value, highly underrated |
-| **Undervalued** | 5-10% | Good value prospects |
-| **Fairly Valued** | 0-5% | Rating matches performance |
-| **Overvalued** | -5 to 0% | Slightly overrated |
-| **Significantly Overvalued** | <-5% | Performance below rating |
-
-**Distribution:**
-- Fairly Valued: 6,624 players (46.2%)
-- Overvalued: 3,641 players (25.4%)
-- Significantly Overvalued: 2,220 players (15.5%)
-- Undervalued: 1,400 players (9.8%)
-- Hidden Gems: 460 players (3.2%)
-
-
 ## 📈 Key Findings
 
 ### 🔍 Dataset Statistics
@@ -560,6 +354,214 @@ Hidden Gem Index = (Value Score × 0.40) +
 | **Eredivisie** | 🇳🇱 Netherlands | 54 | 13.6% | 8.41% | CM/LW | 
 | **3. Liga** | 🇩🇪 Germany | 52 | 11.7% | 8.36% | CB/CM |
 | **La Liga 2** | 🇪🇸 Spain | 44 | 10.4% | 8.09% | CAM/ST | 
+
+
+
+
+##  Methodology: Position-Specific Performance Modeling
+
+### 🎯 The Science Behind Performance Indices
+
+Traditional OVR ratings in FC 25 use a generic formula that fails to capture position-specific excellence. Our custom indices weight attributes based on real world positional demands and in game effectiveness.
+
+#### 1️⃣ Striker Performance Index (SPI)
+
+**Formula Design Philosophy**: Strikers must convert chances efficiently while maintaining composure in high pressure situations.
+
+```python
+SPI = (Finishing × 0.30) + (Positioning × 0.25) + (Shot Power × 0.15) + 
+      (Pace × 0.15) + (Composure × 0.10) + (Dribbling × 0.05)
+```
+
+**Weight Justification**:
+- **Finishing (30%)**: Primary job is scoring goals
+- **Positioning (25%)**: Being in the right place at the right time
+- **Shot Power (15%)**: Ability to beat goalkeepers from distance
+- **Pace (15%)**: Essential for getting behind defenses
+- **Composure (10%)**: Staying calm in 1v1 situations
+- **Dribbling (5%)**: Creating space in tight areas
+
+**Validation Statistics**:
+- Correlation with Goals Scored (Career Mode): 0.78
+- Top 10 SPI players average 0.87 goals/game vs 0.52 for top 10 OVR strikers
+- Identified 318 undervalued strikers (11.1% of all strikers)
+
+**Elite Discoveries**:
+
+| Player | Team | Age | OVR | SPI | Value Gap | Key Strength |
+|--------|------|-----|-----|-----|-----------|--------------|
+| Fardin Ali Molla | Mohun Bagan SG | 22 | 49 | 53.64 | +9.49% | 72 Finishing |
+| Felipe Rodríguez | Preston | 17 | 57 | 62.03 | +8.86% | 88 Positioning |
+| Gbemi Arubi | Waterford | 20 | 52 | 56.40 | +8.46% | 70 Shot Power |
+
+**Position Insight**: Young strikers (17-21) in lower leagues systematically undervalued by 8-10% due to lack of international exposure.
+
+
+
+#### 2️⃣ Winger Performance Index (WPI)
+
+**Formula Design Philosophy**: Modern wingers must combine explosive pace with technical ability to create and finish chances.
+
+```python
+WPI = (Pace × 0.30) + (Dribbling × 0.25) + (Crossing × 0.20) + 
+      (Agility × 0.15) + (Finishing × 0.10)
+```
+
+**Weight Justification**:
+- **Pace (30%)**: Essential for beating fullbacks
+- **Dribbling (25%)**: Creating 1v1 opportunities
+- **Crossing (20%)**: Service to strikers
+- **Agility (15%)**: Quick direction changes
+- **Finishing (10%)**: Converting chances when cutting inside
+
+**Breakthrough Finding**: Wingers show the **highest value score variance** (Std: 4.23%) of all positions, making them the best position group for finding hidden gems.
+
+**Top Winger Discoveries**:
+
+| Player | Position | Team | League | Age | OVR | WPI | Value Gap | Standout Stat |
+|--------|----------|------|--------|-----|-----|-----|-----------|---------------|
+| **Li Deming** | RW | Shanghai Port FC | CSL | 20 | 50 | 60.65 | **+21.30%** | 85 Pace, 78 Dribbling |
+| **Thoi Singh** | LW | NorthEast United | ISL | 20 | 49 | 58.40 | **+19.18%** | 82 Pace, 71 Agility |
+| **Eom Seung Min** | RW | Jeonbuk Hyundai | K League 1 | 21 | 52 | 62.70 | **+20.58%** | 80 Pace, 75 Dribbling |
+| **Serge Ngoma** | RM | Red Bulls | MLS | 19 | 58 | 70.30 | **+21.21%** | 88 Pace, 82 Agility |
+| **Vincy Barretto** | RM | Chennaiyin FC | ISL | 24 | 55 | 66.70 | **+21.27%** | 84 Pace, 79 Crossing |
+
+**Strategic Pattern**: Asian leagues (CSL, ISL, K League 1) contain systematic 15-21% value gaps for wingers due to:
+1. Lower international visibility
+2. Fewer European scouts
+3. EA rating bias toward European leagues
+4. Actual technical skills comparable to European counterparts
+
+**Market Inefficiency**: 274 undervalued wingers identified, with average potential profit of +12.8% performance above rating.
+
+
+
+#### 3️⃣ Midfielder Performance Index (MPI)
+
+**Formula Design Philosophy**: Midfielders are the engine room - vision, passing accuracy, and stamina define elite playmakers.
+
+```python
+MPI = (Passing × 0.30) + (Vision × 0.25) + (Ball Control × 0.20) + 
+      (Stamina × 0.15) + (Long Passing × 0.10)
+```
+
+**Weight Justification**:
+- **Passing (30%)**: Core responsibility of controlling tempo
+- **Vision (25%)**: Seeing and executing key passes
+- **Ball Control (20%)**: Maintaining possession under pressure
+- **Stamina (15%)**: Covering ground for 90 minutes
+- **Long Passing (10%)**: Switching play and launching attacks
+
+**Subtype Analysis**:
+
+| Midfielder Type | Count | Avg OVR | Avg MPI | Key Differentiator |
+|----------------|-------|---------|---------|-------------------|
+| **CDM (Defensive)** | 1,547 | 66.8 | 68.2 | Interceptions (72.3) |
+| **CM (Central)** | 2,134 | 66.5 | 69.1 | Stamina (78.5) |
+| **CAM (Attacking)** | 1,211 | 67.2 | 71.4 | Vision (74.8) |
+
+**Elite Discoveries**:
+
+| Player | Type | Team | League | Age | OVR | MPI | Value Gap | Specialty |
+|--------|------|------|--------|-----|-----|-----|-----------|-----------|
+| Adam Kardaš | CDM | Lechia Gdańsk | Ekstraklasa | 18 | 53 | 59.60 | +12.45% | 68 Vision |
+| Engson Singh | CAM | Mohun Bagan SG | ISL | 21 | 47 | 52.70 | +12.13% | 72 Passing |
+| Mada | CAM | SD Eibar | La Liga 2 | 22 | 57 | 62.10 | +8.95% | 76 Vision |
+
+**Age Factor Analysis**: U21 midfielders show **14.2% higher hidden gem rate** than 25+ midfielders due to:
+- Technical skills developing faster than physical attributes
+- OVR formula over-weighting physicality
+- Stamina/work rate improving with age (already high in young players)
+
+
+
+#### 4️⃣ Defender Performance Index (DPI)
+
+**Formula Design Philosophy**: Modern defenders need defensive awareness, physical presence, and recovery pace.
+
+```python
+DPI = (Defense × 0.30) + (Standing Tackle × 0.25) + (Heading × 0.15) + 
+      (Strength × 0.15) + (Interceptions × 0.10) + (Pace × 0.05)
+```
+
+**Weight Justification**:
+- **Defense (30%)**: Core defensive positioning and awareness
+- **Standing Tackle (25%)**: Primary defensive action
+- **Heading (15%)**: Aerial dominance
+- **Strength (15%)**: Physical duels
+- **Interceptions (10%)**: Reading the game
+- **Pace (5%)**: Recovery speed (less critical than other positions)
+
+**Position Subtype Comparison**:
+
+| Defender Type | Count | Avg OVR | Avg DPI | Pace Avg | Physical Avg |
+|---------------|-------|---------|---------|----------|--------------|
+| **CB (Center Back)** | 2,456 | 66.1 | 71.2 | 64.2 | 73.8 |
+| **LB/RB (Full Back)** | 1,234 | 65.8 | 68.4 | 74.3 | 68.1 |
+| **LWB/RWB (Wing Back)** | 524 | 66.4 | 69.7 | 76.8 | 66.4 |
+
+**Top Defender Gems**:
+
+| Player | Position | Team | League | Age | OVR | DPI | Value Gap | Type |
+|--------|----------|------|--------|-----|-----|-----|-----------|------|
+| Riccardo Di Trolio | CB | Coventry City | Championship | 19 | 52 | 56.95 | +9.52% | Ball-playing CB |
+| Christian Østergaard | CB | Randers FC | Superliga | 19 | 52 | 56.25 | +8.17% | Physical defender |
+| Leopold Wurm | CB | Jahn Regensburg | 3. Liga | 18 | 55 | 59.30 | +7.82% | Modern sweeper |
+
+**Market Pattern**: Championship, 3. Liga, and Scandinavian leagues have 2.3x more undervalued defenders than top-5 leagues.
+
+
+
+## 📊 Performance Metrics Explained
+
+### Value Score
+```python
+Value Score = ((Position Performance Index - Overall Rating) / Overall Rating) × 100
+```
+- **Positive Score**: Player performs better than their rating suggests
+- **>5%**: Undervalued player
+- **>10%**: Hidden Gem territory
+- **Negative Score**: Overvalued based on performance
+
+### Quadrant Classification
+```python
+Quadrant = Based on (Age ≤ 25 OR > 25) AND (Value Score ≥ 5% OR < 5%)
+```
+- **★ Prime Target:** Young (≤25) + High Value (≥5%) - BEST investment opportunity
+- **Short-term Value:** Older (>25) + High Value (≥5%) - Good for immediate impact
+- **Development Player:** Young (≤25) + Low Value (<5%) - Future potential project
+- **Overvalued:** Older (>25) + Low Value (<5%) - Avoid these players
+
+### Hidden Gem Index
+```python
+Hidden Gem Index = (Value Score × 0.40) + 
+                   ((30 - Age) × 0.30) + 
+                   (League Bonus × 0.15) + 
+                   ((79 - OVR) × 0.15)
+```
+**Weights:**
+- 40% - Performance vs Rating
+- 30% - Youth Factor (younger = better)
+- 15% - League Tier (non-top 5 leagues get bonus)
+- 15% - Room for Growth (lower OVR = more potential)
+
+### Player Classification
+
+| Category | Value Score Range | Description |
+|----------|------------------|-------------|
+| **Hidden Gem** | >10% | Elite value, highly underrated |
+| **Undervalued** | 5-10% | Good value prospects |
+| **Fairly Valued** | 0-5% | Rating matches performance |
+| **Overvalued** | -5 to 0% | Slightly overrated |
+| **Significantly Overvalued** | <-5% | Performance below rating |
+
+**Distribution:**
+- Fairly Valued: 6,624 players (46.2%)
+- Overvalued: 3,641 players (25.4%)
+- Significantly Overvalued: 2,220 players (15.5%)
+- Undervalued: 1,400 players (9.8%)
+- Hidden Gems: 460 players (3.2%)
+
 
 
 ## 📊 Power BI Dashboard Features
