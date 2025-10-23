@@ -649,7 +649,7 @@ IF(
 | Striker | 2,876 | 66.45 | 318 | 11.1% |
 | Winger | 2,363 | 66.18 | 274 | 11.6% |
 
-## 🎮 Real-World Use Cases & Applications
+## 🎮 Real-World Use Cases & Usage Guide
 
 ### Use Case 1: EA Sports FC Producer - Rating Calibration for FC 27
 
@@ -703,7 +703,7 @@ Filter by:
 - Current Market Value: €800K
 
 **Scouting Report**:
-The Hidden Gem Index (15.22) indicates exceptional value. His midfielder performance index (59.60) suggests he's performing at a 59-60 OVR level despite being rated 53—a gap typically indicating real-world undervaluation in lower-tier leagues.
+The Hidden Gem Index (15.22) indicates exceptional value. His midfielder performance index (59.60) suggests he's performing at a 59-60 OVR level despite being rated 53 a gap typically indicating real-world undervaluation in lower-tier leagues.
 
 ### Use Case 3: Sports Analyst - Data Journalism
 
